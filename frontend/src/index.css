@@ -1,0 +1,66 @@
+/* =========================================================
+   COLLABORATION CARETS
+========================================================= */
+
+.tiptap .collaboration-carets__caret {
+  position: relative;
+  margin-left: -1px;
+  margin-right: -1px;
+
+  border-left: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+
+  pointer-events: none;
+  word-break: normal;
+}
+
+.tiptap .collaboration-carets__label {
+  position: absolute;
+
+  top: -1.5em;
+  left: -1px;
+
+  padding: 3px 7px;
+
+  border-radius: 4px 4px 4px 0;
+
+  color: white;
+  background: currentColor;
+
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+
+  white-space: nowrap;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+.tiptap .collaboration-carets__selection {
+  background-color: currentColor;
+
+  opacity: 0.18;
+
+  pointer-events: none;
+}
+
+/* Hide scrollbar but keep scrolling */
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  background: #eef2f7;
+}
