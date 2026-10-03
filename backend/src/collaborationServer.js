@@ -13,7 +13,7 @@ const {
     setupWSConnection,
 } = require("y-websocket/bin/utils");
 
-const PORT = process.env.COLLAB_PORT || 1234;
+const PORT = process.env.PORT || process.env.COLLAB_PORT || 1234;
 const HOST = process.env.COLLAB_HOST || "0.0.0.0";
 
 /* =========================================================
